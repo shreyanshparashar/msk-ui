@@ -1,7 +1,5 @@
-
-
-import propertyTypes from 'msk-property-types'
-import themes from 'msk-themes'
+import propertyTypes from 'msk-property-types';
+import themes from 'msk-themes';
 
 const properties = {
   theme: {
@@ -19,7 +17,8 @@ const properties = {
   imageUrl: {
     name: 'Image URL',
     type: propertyTypes.STRING,
-    value: 'https://github.com/fouzanmohd/webproject1/blob/master/profile-img.png?raw=true',
+    value:
+      'https://github.com/fouzanmohd/webproject1/blob/master/profile-img.png?raw=true',
     required: false
   },
   designation: {
@@ -42,30 +41,29 @@ const properties = {
   },
   location: {
     name: 'Location',
-    type:propertyTypes.STRING,
-    value:'Your place',
-    required:true
+    type: propertyTypes.STRING,
+    value: 'Your place',
+    required: true
   },
   linkedIn: {
     name: 'Linkedin',
-    type:propertyTypes.URL,
+    type: propertyTypes.URL,
     value:'LinkedIn id: ',
-    required:false
+    required: false
   },
   gitHub: {
     name: 'gitHub',
-    type:propertyTypes.URL,
+    type: propertyTypes.URL,
     value:'GitHub Id:',
-    required:false
+    required: false
   },
   description: {
     name: 'Description',
-    type:propertyTypes.URL,
-    value: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat quo quidem pariatur et! Quod ",
-    required:false
+    type: propertyTypes.URL,
+    value:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat quo quidem pariatur et! Quod ',
+    required: false
   }
-
-  
 };
 
 export default properties;
