@@ -28,6 +28,11 @@
       "name": "Bhavay Puri",
       "email": "bhavaypuri15@gmail.com",
       "url": "https://github.com/RisingGeek"
+    },
+    {
+      "name": "Prakhar Tiwari",
+      "email": "prakhartew@gmail.com",
+      "url": "https://github.com/prak281993"
     }
   ],
   "license": "ISC",
@@ -36,9 +41,9 @@
   },
   "homepage": "https://mskdocuments.com/components",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.10.5",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
@@ -47,18 +52,18 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.18.0",
-    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-react": "^7.20.5",
     "husky": "^4.2.5",
-    "jest": "^26.1.0",
+    "jest": "^26.2.1",
     "nodemon": "^2.0.4",
     "open-browser-webpack-plugin": "0.0.5",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "webpack-node-externals": "^2.3.0"
+    "webpack-node-externals": "^2.5.0"
   },
   "dependencies": {
     "msk-themes": "^1.0.3",
