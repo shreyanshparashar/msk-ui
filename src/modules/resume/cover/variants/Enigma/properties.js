@@ -18,7 +18,7 @@ const properties = {
     name: 'Image URL',
     type: propertyTypes.STRING,
     value:
-      'https://github.com/fouzanmohd/webproject1/blob/master/profile-img.png?raw=true',
+      'https://media-exp1.licdn.com/dms/image/C5103AQHrnWEIr6FKtg/profile-displayphoto-shrink_100_100/0?e=1601510400&v=beta&t=AlM_EJ9wWG7C8MFPh2LTIHltG8MTQT8sQa2Q3_oR37M',
     required: false
   },
   designation: {
