@@ -32,21 +32,18 @@ const properties = {
     name: 'Email ID',
     type: propertyTypes.EMAIL,
     value: 'youremail@emai.com',
-    icon: 'https://github.com/fouzanmohd/webproject1/blob/master/email.png?raw=true'
-    ,required: true
+    required: true
   },
   phoneNo: {
     name: 'Phone No',
     type: propertyTypes.NUMBER,
     value: '99999999999',
-    icon:'https://github.com/fouzanmohd/webproject1/blob/master/telephone.png?raw=true',
     required: true
   },
   location: {
     name: 'Location',
     type:propertyTypes.STRING,
     value:'Your place',
-    icon:'https://github.com/fouzanmohd/webproject1/blob/master/place.png?raw=true',
     required:true
   },
   linkedIn: {
