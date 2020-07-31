@@ -1,6 +1,6 @@
 import React from 'react';
 
-const useStyles = (theme) => ({
+const useStyles = () => ({
   mainTitle: {
     width: '100%',
     textAlign: 'center',
