@@ -76,7 +76,7 @@ const Elegant = ({ theme, headlineText, experience }) => {
               {experienceDetails.designation.value}
             </h1>
             <h3 style={styles.company}>
-              {experienceDetails.company.value} |
+              {experienceDetails.company.value} |{' '}
               {experienceDetails.location.value}
             </h3>
             <p style={styles.description}>
