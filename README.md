@@ -1,5 +1,6 @@
 # MSK UI
 A library of MSK widgets.
+This project is inspired by material-ui
 
 ---
 # Running the project
@@ -68,7 +69,7 @@ run `npm start`. This will open the application on http://localhost:6501/
 
 #### Step 5 : Create a branch and start coding
 
-There is a folder called **sample** inside the **resume** module. Go ahead and check all the files inside. There is a detailed documentation at the beginning of each file. This should give you enough explanation about the file and certain rules and best practices to be followed.
+There is a folder called [**sample**](https://github.com/MSK-Documents/msk-ui/tree/master/src/modules/resume/sample) inside the [**resume**](https://github.com/MSK-Documents/msk-ui/tree/master/src/modules/resume) module. Go ahead and check all the files inside. There is a detailed documentation at the beginning of each file. This should give you enough explanation about the file and certain rules and best practices to be followed.
 
 Once you are familiar with the sample widget, go ahead and add your own widgets. Research online and identify different widgets inside vaarious documents.
 

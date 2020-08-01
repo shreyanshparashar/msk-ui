@@ -3,11 +3,9 @@
 This file declares all the properties that will be passed to the variant
 when it is rendered in the editor.
 
-'msk-property-types' | https://github.com/ManojSatishkumar/msk-property-types/blob/master/index.js
-Declares different types of proprties supported.
+'msk-property-types' | Declares different types of proprties supported.
 
-'msk-themes' | https://github.com/ManojSatishkumar/msk-themes/blob/master/index.js
-Declares different themes supported.
+'msk-themes' | Declares different themes supported.
 *************************************************************************
 */
 
