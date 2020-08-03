@@ -22,8 +22,8 @@ const properties = {
   },
   company: {
     name: 'Company',
-    type: propertyTypes.STRING,
-    value: 'Company',
+    type: propertyTypes.ARRAY,
+    value: ['Company1'],
     required: false
   },
   imageUrl: {

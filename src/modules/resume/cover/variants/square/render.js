@@ -27,24 +27,28 @@ const useStyle = (theme) => ({
     color: theme.value.contrast,
     fontSize: 25
   },
-  designation: {
+  designationAndCompany: {
     display: 'flex',
     justifyContent: 'center',
+    textAlign: 'center',
     color: theme.value.contrast,
-    fontSize: 18
+    fontSize: 18,
+    padding: 15
   }
 });
 
 const Square = ({ theme, name, designation, company, imageUrl }) => {
   const styles = useStyle(theme);
   return (
-    <div style={{backgroundColor:theme.value.color , paddingBottom:"20px"}  }>
+    <div style={{ backgroundColor: theme.value.color, paddingBottom: '20px' }}>
       <div style={styles.imgContainer}>
         <img style={styles.imgBox} src={imageUrl.value} alt="profilePhoto" />
         <div style={styles.line}></div>
       </div>
-          <div style={styles.name}>{name.value}</div>
-          <div style={styles.designation}>{designation.value} | {company.value}</div>
+      <div style={styles.name}>{name.value}</div>
+      <div style={styles.designationAndCompany}>
+        {designation.value} {company.value.map((el) => ` | ${el}`)}
+      </div>
     </div>
   );
 };
