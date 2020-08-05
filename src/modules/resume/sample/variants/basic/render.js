@@ -28,6 +28,7 @@ and 'theme.value.contrast' for text color.
 12. Use only '.value' of the properties in this file.
 13. DO NOT use any icons files. Use only URLs as the image "src".
 14. DO NOT use any react hooks like useEffect or useState etc.,
+15. DO NOT use Regular expressions.
 *************************************************************************
 */
 
