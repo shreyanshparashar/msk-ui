@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server .",
+    "bundle": "node ./app/bundler/bundle.js",
     "build": "webpack .",
     "lint": "eslint --ext .js,.jsx ."
   },
@@ -73,6 +74,7 @@
     "msk-property-types": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "@babel/runtime": "^7.11.0"
   }
 }
