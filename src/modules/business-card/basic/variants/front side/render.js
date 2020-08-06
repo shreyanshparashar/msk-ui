@@ -1,6 +1,6 @@
 import React from 'react'
 
-const useStyles = (theme) => ({
+const useStyles = () => ({
   root: {
     padding: '10% 0'
   },
@@ -15,6 +15,7 @@ const useStyles = (theme) => ({
 const Frontside = (
   {
     theme,
+    bgColor,
     companyName,
     tagline
   }
@@ -26,12 +27,12 @@ const Frontside = (
     <>
     <div style={{
       ...styles.root,
-      backgroundColor: 'black',
+      backgroundColor: bgColor.value.color,
       color: theme.value.contrast
     }}>
       <div style={{
         ...styles.mainContent,
-      backgroundColor: '#e8d743',
+      backgroundColor: theme.value.color,
       color: theme.value.contrast
     }}>
       <h2 style={{margin:'0', fontSize:20}}>{companyName.value}</h2>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const useStyles = (theme) => ({
+const useStyles = () => ({
   root: {
     padding: '10% 0'
   },
@@ -15,6 +15,7 @@ const useStyles = (theme) => ({
 const Frontside = (
   {
     theme,
+    bgColor,
     name,
     designation,
     contactInfo
@@ -27,10 +28,10 @@ const Frontside = (
     <>
     <div style={{
       ...styles.root,
-      backgroundColor: "black",
-      color: '#e8d743'
+      backgroundColor: bgColor.value.color,
+      color: theme.value.color
     }}>
-      <div style={{...styles.mainContent}}>
+      <div style={styles.mainContent}>
       <div>
   <h2 style={{margin:'0'}}>{name.value}</h2>
   <p style={{margin:'0', paddingBottom:'10px'}}><em>{designation.value}</em></p>
