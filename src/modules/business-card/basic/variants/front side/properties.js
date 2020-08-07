@@ -1,5 +1,5 @@
-import propertyTypes from 'msk-property-types'
-import themes from 'msk-themes'
+import propertyTypes from 'msk-property-types';
+import themes from 'msk-themes';
 
 const properties = {
   theme: {
@@ -8,8 +8,8 @@ const properties = {
     value: themes.dark.mistMaroon,
     required: true
   },
-  bgColor:{
-    name: "Background Color",
+  bgColor: {
+    name: 'Background Color',
     type: propertyTypes.THEME,
     value: themes.light.cutePink,
     required: true
@@ -26,5 +26,5 @@ const properties = {
     value: 'tagline',
     required: false
   }
-}
+};
 export default properties;
