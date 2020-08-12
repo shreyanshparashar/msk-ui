@@ -1,70 +1,64 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 
-const useStyles = (theme, height) => ({
-  root: {
-    display: 'flex',
-    padding: '30px 0px',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column'
-  },
-  name: {
-    margin: 0,
-    fontSize: 32,
-    fontWeight: 'bold'
-  },
-  designation: {
-    margin: 0,
-    fontSize: 16
-  },
-  image: {
-    width: 120,
-    minHeight: 120,
-    borderRadius: '50%',
-    border: `5px solid ${theme.value.color}`
-  },
-  ribbonWrapper: {
-    width: '60%',
-    padding: 20,
-    height: '100%',
-    textAlign: 'center',
-    position: 'relative',
-    color: theme.value.contrast,
-    marginBottom: `${height * 0.25}px`,
-    backgroundColor: theme.value.color
-  },
-  ribbonWings: {
-    width: '50%',
-    height: 'inherit',
-    position: 'absolute',
-    filter: 'brightness(150%)',
-    backgroundColor: theme.value.color
-  },
-  ribbonUnder: {
-    zIndex: 1,
-    width: '25%',
-    height: '25%',
-    position: 'absolute',
-    filter: 'brightness(50%)',
-    backgroundColor: theme.value.color
-  }
-});
+const useStyles = (theme) => {
+  const dark = theme.value.contrast === 'white';
+  return {
+    root: {
+      display: 'flex',
+      padding: '20px 0px',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column'
+    },
+    name: {
+      margin: 0,
+      fontSize: 32,
+      fontWeight: 'bold'
+    },
+    designation: {
+      margin: 0,
+      fontSize: 16
+    },
+    image: {
+      width: 120,
+      marginTop: 20,
+      minHeight: 120,
+      borderRadius: '50%',
+      border: `5px solid ${theme.value.color}`
+    },
+    ribbonWrapper: {
+      width: '60%',
+      height: '100%',
+      textAlign: 'center',
+      position: 'relative',
+      color: theme.value.contrast,
+      padding: '10px 10px 20px 10px',
+      backgroundColor: theme.value.color
+    },
+    ribbonWings: {
+      width: '50%',
+      height: 'inherit',
+      position: 'absolute',
+      backgroundColor: theme.value.color,
+      filter: `brightness(${dark ? 150 : 80}%)`
+    },
+    ribbonUnder: {
+      zIndex: 1,
+      width: '25%',
+      height: '25%',
+      position: 'absolute',
+      backgroundColor: theme.value.color,
+      filter: `brightness(${dark ? 40 : 60}%)`
+    }
+  };
+};
 
 const Ribbon = ({ theme, name, imageUrl, designation }) => {
-  const [height, setHeight] = useState(null);
-  const ribbonRef = useRef(null);
-
-  useEffect(() => {
-    if (ribbonRef.current) {
-      setHeight(ribbonRef.current.offsetHeight);
-    }
-  }, [ribbonRef]);
-
-  const styles = useStyles(theme, height);
+  const styles = useStyles(theme);
 
   return (
     <div style={styles.root}>
-      <div style={styles.ribbonWrapper} ref={ribbonRef}>
+      <div style={styles.ribbonWrapper}>
         <div style={styles.name}>{name.value}</div>
         {designation.value && (
           <h3 style={styles.designation}>{designation.value}</h3>
