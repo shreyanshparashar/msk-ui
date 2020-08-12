@@ -5,6 +5,7 @@ import Ribbon from './ribbon/index.js';
 import Modern from './modern/index.js';
 import MultiComponent from './multiComponent/index.js';
 import Enigma from './Enigma/index.js';
+import Frame from './frame/index';
 
 export default {
   Basic,
@@ -13,5 +14,6 @@ export default {
   Flag,
   Ribbon,
   Modern,
-  MultiComponent
+  MultiComponent,
+  Frame
 };
