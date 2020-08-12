@@ -123,7 +123,7 @@ const Basic = ({
             style={styles.githubLinkStyle}
             href={githubUrl.value}
             target="_blank"
-            referrer="noreferrer"
+            rel="noreferrer"
           >
             <img src={githubIcon} style={styles.iconStyle} />
             GitHub
@@ -132,7 +132,7 @@ const Basic = ({
             style={styles.linkedinLinkStyle}
             href={linkedinUrl.value}
             target="_blank"
-            referrer="noreferrer"
+            rel="noreferrer"
           >
             <img src={linkedinIcon} style={styles.iconStyle} />
             LinkedIn
